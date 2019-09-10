@@ -32,7 +32,8 @@ Plugin 'Badacadabra/vim-archery'
 Plugin 'tpope/vim-sensible'
 Plugin 'morhetz/gruvbox'
 Plugin 'scrooloose/nerdtree.git'
-Plugin 'zxqfl/tabnine-vim'
+Plugin 'mtdl9/vim-log-highlighting'
+"Plugin 'zxqfl/tabnine-vim'
 
 "let g:gruvbox_contrast_dark='hard'
 "Plugin 'morhetz/gruvbox'
@@ -86,8 +87,24 @@ set t_8f=[[38;2;%lu;%lu;%lum
 "set background=light
 "let g:gruvbox_bold=1
 
-"colorscheme one-dark
 colorscheme afterglow
+"colorscheme  tender
+"colorscheme jellybeans
+"colorscheme onedark
+"colorscheme hybrid_material
+"colorscheme hybrid
+"colorscheme hybrid_reverse
+"colorscheme dracula
+"colorscheme github
+"colorscheme deus
+"colorscheme materialbox
+"colorscheme minimalist
+"colorscheme molokai
+"colorscheme molokayo
+"colorscheme OceanicNext
+"colorscheme seoul256
+"colorscheme space-vim-dark
+"colorscheme termschool
 
 "let g:alduin_Shout_Dragon_Aspect = 1
 "colorscheme alduin
@@ -162,6 +179,10 @@ let Powerline_symbols='fancy'
 let g:bufferline_echo=0
 set laststatus=2
 set t_Co=256
+
+if has('gui_running')
+    set guifont=saxMono:h14
+endif
 
 " NERDTree
 map <C-n> :NERDTreeToggle<CR>
